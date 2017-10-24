@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
-import { CourseComponent } from "./course/cources.component";
+import { CourseComponent } from "./course/courses.component";
+import { FavouriteComponent } from './favourite/favourite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
-    SummaryPipe
+    SummaryPipe,
+    FavouriteComponent
   ],
   imports: [
     BrowserModule,

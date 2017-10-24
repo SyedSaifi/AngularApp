@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'cources',
+    selector: 'courses',
     template: `<div (click)="onDivClick()">
                <img [src]="imageUrl"/> 
                <h2>{{title}}</h2> 
@@ -16,7 +16,7 @@ import {Component} from '@angular/core';
                <h1>{{summaryText | Summary:20}}</h1>`
 })
 export class CourseComponent{
-    title="Enter cources name";
+    title="Enter courses name";
     imageUrl="http://lorempixel.com/400/200/";
     isActive=true;
     name="";
