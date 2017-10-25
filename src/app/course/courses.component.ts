@@ -6,7 +6,6 @@ import {Component} from '@angular/core';
                <img [src]="imageUrl"/> 
                <h2>{{title}}</h2> 
                <br/>
-               <br/>
                <input [(ngModel)]="name" (keyup.enter)="onKeyUp()"/>
                <br/> 
                <br/>

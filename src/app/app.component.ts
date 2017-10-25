@@ -10,6 +10,11 @@ export class AppComponent {
   title = 'Angular app';
   isFavourtie = true;
 
+  tweet = {
+    likeCount: 10,
+    isActive: true
+  }
+
   onFavChange(eventArgs: FavoriteChangeArgs){
     console.log("Facvourite is changed :", eventArgs)
   }

@@ -6,6 +6,7 @@
     Welcome to {{title}}!
   </h1>
   <courses></courses>
+  <like *ngIf="tweet.likeCount>0" [likeCount]="tweet.likeCount" [isActive]="tweet.isActive"></like>
 </div>
 
 
