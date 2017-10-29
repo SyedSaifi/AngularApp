@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from "./course/courses.component";
 import { FavouriteComponent } from './favourite/favourite.component';
 import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { LikeComponent } from './like/like.component';
     CourseComponent,
     SummaryPipe,
     FavouriteComponent,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
                <img [src]="imageUrl"/> 
                <h2>{{title}}</h2> 
                <br/>
-               <input [(ngModel)]="name" (keyup.enter)="onKeyUp()"/>
+               <input [(ngModel)]="name" (keyup.enter)="onKeyUp()" [appInputFormat]="'uppercase'"/>
                <br/> 
                <br/>
                <button (click)="onClick($event)" class="btn btn-primary">Save</button>

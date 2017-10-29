@@ -1,14 +1,39 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
 <div style="text-align:center">
+  <!-- Expand and collapse-->
+  <zippy></zippy>
+  <!--ends-->
   <favourite [isFavourite]="isFavourtie" (change)="onFavChange($event)"></favourite>
   <h1>
     Welcome to {{title}}!
   </h1>
   <courses></courses>
   <like *ngIf="tweet.likeCount>0" [likeCount]="tweet.likeCount" [isActive]="tweet.isActive"></like>
+  <br/>
+  <br/>
 </div>
 
+<!--Tab display-->
+<div style="text-align:center">
+<ul class= "nav nav-pills">
+    <li [class.active]="viewMode=='map'"><a (click)="viewMode='map'">Map View</a></li>
+    <li [class.active]="viewMode=='list'"><a (click)="viewMode='list'">List View</a></li>
+</ul>
+</div>
+
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map view content</div>
+    <div *ngSwitchCase="'list'">
+      <ul>
+        <li *ngFor="let course of courses">
+          {{course.name}}
+        </li>
+      </ul>
+    </div>
+    <div *ngSwitchDefault>Otherwise</div>
+</div>
+<br/>
+<br/>
+<!--ends-->
 
 <!--<h2>Here are some links to help you start: </h2>
 <ul>
